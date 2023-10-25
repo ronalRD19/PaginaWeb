@@ -173,5 +173,15 @@
    background-color: #1CB698;
 }*/
 
+.cta{
+   display: inline-block;
+   background-color: #2091f9;
+   justify-self: center;
+   color: #fff;
+   text-decoration: none;
+   padding:13px 20px;
+   border-radius: 30px;
+   
+}
 
 
