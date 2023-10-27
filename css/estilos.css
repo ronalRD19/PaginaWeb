@@ -1,273 +1,392 @@
  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
  /*  Importación de una fuente de Google Fonts  Esta línea importa la fuente 'Poppins' de Google Fonts en pesos específicos (300, 400, 600, 700) y la configura para mostrar caracteres especiales correctamente.  */
 
- :root { /* Definición de variables CSS personalizadas  */
-    --padding-container: 100px 0; /* Establece el relleno vertical de 100px y el relleno horizontal de 0 para los contenedores */
-    --color-title: #001A49; /* Establece el color de título como un tono de azul oscuro */
+ :root {
+    /* Definición de variables CSS personalizadas  */
+    --padding-container: 100px 0;
+    /* Establece el relleno vertical de 100px y el relleno horizontal de 0 para los contenedores */
+    --color-title: #001A49;
+    /* Establece el color de título como un tono de azul oscuro */
  }
 
 
- body { /* Aplicación de la fuente Poppins a todo el cuerpo del documento. Esta línea aplica la fuente 'Poppins' a todo el cuerpo del documento, con una fuente de respaldo de tipo sans-serif si 'Poppins' no está disponible. */
-    font-family: 'Poppins', sans-serif; 
+ body {
+    /* Aplicación de la fuente Poppins a todo el cuerpo del documento. Esta línea aplica la fuente 'Poppins' a todo el cuerpo del documento, con una fuente de respaldo de tipo sans-serif si 'Poppins' no está disponible. */
+    font-family: 'Poppins', sans-serif;
     /* Si Poppins no está disponible, se usará una fuente genérica sans-serif */
  }
 
- .container { /* Estilos para contenedor genérico. Estos estilos se aplican a elementos con la clase .container. Establecen el ancho del contenedor en el 90% del ancho del elemento primario, lo centran horizontalmente, ocultan cualquier contenido que se desborde y aplican el relleno definido por la variable --padding-container. */
-    width: 90%; /* Establece el ancho del contenedor en el 90% del ancho del elemento primario */
-    max-width: 1200px; /* Establece el ancho máximo del contenedor en 1200px */
-    margin: 0 auto; /* Centra horizontalmente el contenedor en el elemento primario */
-    overflow: hidden; /*  Oculta el contenido que exceda los límites del contenedor */
-    padding: var(--padding-container); /* Aplica el relleno definido por la variable --padding-container */
+ .container {
+    /* Estilos para contenedor genérico. Estos estilos se aplican a elementos con la clase .container. Establecen el ancho del contenedor en el 90% del ancho del elemento primario, lo centran horizontalmente, ocultan cualquier contenido que se desborde y aplican el relleno definido por la variable --padding-container. */
+    width: 90%;
+    /* Establece el ancho del contenedor en el 90% del ancho del elemento primario */
+    max-width: 1200px;
+    /* Establece el ancho máximo del contenedor en 1200px */
+    margin: 0 auto;
+    /* Centra horizontalmente el contenedor en el elemento primario */
+    overflow: hidden;
+    /*  Oculta el contenido que exceda los límites del contenedor */
+    padding: var(--padding-container);
+    /* Aplica el relleno definido por la variable --padding-container */
 
  }
 
- .hero { /* Estilos para la sección del hero */
-    width: 100%;/* Establece el ancho de la sección del hero al 100% */
-    height: 100vh;/* Establece la altura de la sección del hero al 100% de la altura de la ventana gráfica */
-    min-height: 600px; /* Establece la altura mínima de la sección del hero en 600px */
-    max-height: 800px;/* Establece la altura máxima de la sección del hero en 800px */
-    position: relative;/* Establece la posición del elemento como relativa para permitir desplazamiento */
-    display: grid;/* Establece el tipo de visualización del elemento como una cuadrícula */
-    grid-template-rows: 100px 1fr;/* Establece el tamaño de fila de la cuadrícula para la sección del hero */
-    color: #fff;/* Establece el color de texto para la sección del hero como blanco */
+ .hero {
+    /* Estilos para la sección del hero */
+    width: 100%;
+    /* Establece el ancho de la sección del hero al 100% */
+    height: 100vh;
+    /* Establece la altura de la sección del hero al 100% de la altura de la ventana gráfica */
+    min-height: 600px;
+    /* Establece la altura mínima de la sección del hero en 600px */
+    max-height: 800px;
+    /* Establece la altura máxima de la sección del hero en 800px */
+    position: relative;
+    /* Establece la posición del elemento como relativa para permitir desplazamiento */
+    display: grid;
+    /* Establece el tipo de visualización del elemento como una cuadrícula */
+    grid-template-rows: 100px 1fr;
+    /* Establece el tamaño de fila de la cuadrícula para la sección del hero */
+    color: #fff;
+    /* Establece el color de texto para la sección del hero como blanco */
  }
 
- .hero::before {/* Pseudo-elemento ::before para estilos adicionales en la sección del héroe */
-   content: ""; /* Establece el contenido del pseudo-elemento como vacío */
-   position: absolute;/* Establece la posición del pseudo-elemento como absoluta con respecto al elemento principal */
-   top: 0;/* Coloca el pseudo-elemento en la parte superior del elemento principal */
-   left: 0;/* Coloca el pseudo-elemento en el borde izquierdo del elemento principal */
-   width: 100%;/* Establece el ancho del pseudo-elemento al 100% del ancho del elemento principal */
-   height: 100%;/* Establece la altura del pseudo-elemento al 100% de la altura del elemento principal */
-   background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../images/computer.jpg);/* Establece la imagen de fondo y un degradado en la sección del héroe */
-   background-size: cover;/* Ajusta la imagen de fondo para cubrir el tamaño del elemento */
-   clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);/* Define una forma de recorte personalizada para el pseudo-elemento */
-   z-index: -1;/* Establece la posición en el eje Z del pseudo-elemento para colocarlo detrás del contenido principal */
-}
+ .hero::before {
+    /* Pseudo-elemento ::before para estilos adicionales en la sección del héroe */
+    content: "";
+    /* Establece el contenido del pseudo-elemento como vacío */
+    position: absolute;
+    /* Establece la posición del pseudo-elemento como absoluta con respecto al elemento principal */
+    top: 0;
+    /* Coloca el pseudo-elemento en la parte superior del elemento principal */
+    left: 0;
+    /* Coloca el pseudo-elemento en el borde izquierdo del elemento principal */
+    width: 100%;
+    /* Establece el ancho del pseudo-elemento al 100% del ancho del elemento principal */
+    height: 100%;
+    /* Establece la altura del pseudo-elemento al 100% de la altura del elemento principal */
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url(../images/computer.jpg);
+    /* Establece la imagen de fondo y un degradado en la sección del héroe */
+    background-size: cover;
+    /* Ajusta la imagen de fondo para cubrir el tamaño del elemento */
+    clip-path: polygon(0 0, 100% 0, 100% 80%, 50% 95%, 0 80%);
+    /* Define una forma de recorte personalizada para el pseudo-elemento */
+    z-index: -1;
+    /* Establece la posición en el eje Z del pseudo-elemento para colocarlo detrás del contenido principal */
+ }
 
 
  /* nav */
 
- .nav {/* Estilos para la barra de navegación */
-   --padding-container: 0;/* Establece el relleno del contenedor en 0 */
-   height: 100%;/* Establece la altura de la barra de navegación al 100% */
-   display: flex;/* Establece la presentación de los elementos secundarios como una caja flexible */
-   align-items: center;/* Alinea los elementos secundarios verticalmente en el centro */
+ .nav {
+    /* Estilos para la barra de navegación */
+    --padding-container: 0;
+    /* Establece el relleno del contenedor en 0 */
+    height: 100%;
+    /* Establece la altura de la barra de navegación al 100% */
+    display: flex;
+    /* Establece la presentación de los elementos secundarios como una caja flexible */
+    align-items: center;
+    /* Alinea los elementos secundarios verticalmente en el centro */
+ }
+
+
+ .nav__title {
+    /* Estilos para el título de la barra de navegación */
+    font-weight: 300;
+    /* Establece el grosor de la fuente del título */
+ }
+
+
+ .nav__link {
+    /* Estilos para los enlaces de la barra de navegación */
+    margin-left: auto;
+    /* Establece un margen a la izquierda de los enlaces */
+    padding: 0;
+    /* Establece el relleno de los enlaces a 0 */
+    display: grid;
+    /* Establece la presentación de los enlaces como una cuadrícula */
+    grid-auto-flow: column;
+    /* Establece el flujo automático de la cuadrícula en columnas */
+    grid-auto-columns: max-content;
+    /* Establece el ancho de columna automático según el contenido máximo */
+    gap: 2em;
+    /* Establece el espacio entre las columnas */
+ }
+
+ .nav__items {
+    /* Estilos para los elementos de la barra de navegación */
+    list-style: none;
+    /* Elimina los marcadores de lista de los elementos */
+ }
+
+
+ .nav__links {
+    /* Estilos para los enlaces de la barra de navegación */
+    color: #fff;
+    /* Establece el color del texto de los enlaces como blanco */
+    text-decoration: none;
+    /* Elimina la decoración de texto de los enlaces */
+ }
+
+ .nav__menu {
+    /* Estilos para el menú de navegación */
+    margin-left: auto;
+    /* Establece un margen a la izquierda del menú */
+    cursor: pointer;
+    /* Cambia el cursor a un puntero cuando pasa sobre el menú */
+    display: none;
+    /* Oculta el menú de navegación */
+ }
+
+
+ .nav__img {
+    /* Estilos para la imagen de la barra de navegación */
+    display: block;
+    /* Establece la presentación de la imagen como bloque */
+    width: 30px;
+    /* Establece el ancho de la imagen en 30px */
+ }
+
+
+ .nav__close {
+    /* Estilos para el cierre de la barra de navegación */
+    display: var(--show, none);
+    /* Establece el valor de visualización según la variable --show */
+ }
+
+ /* hero container*/
+
+ .hero__container {
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+ }
+
+ .hero__title {
+    font-size: 3rem;
+ }
+
+ .hero__paragraph {
+    margin-bottom: 20px;
+ }
+
+
+ .cta {
+    display: inline-block;
+    background-color: #2091f9;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+
+ }
+
+ /*about */
+
+ .about {
+    text-align: center;
+ }
+
+ .subtitle {
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+ }
+
+ .about__paragraph {
+    line-height: 1.7;
+ }
+
+ .about__main {
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+ }
+
+
+ .about__icons {
+    display: grid;
+    gap: 1em;
+    justify-items: center;
+    width: 260px;
+    overflow: hidden;
+    margin: 0 auto;
+ }
+
+ .about__icon {
+    width: 40px;
+ }
+
+ /*kwonledge*/
+
+ .knowledge {
+    background-color: #e5e5f7;
+
+    background-image: repeating-radial-gradient(circle at 0 0, transparent 0, rgb(244, 153, 7) 10px), repeating-linear-gradient(#fabe75e8, #eadfce);
+    overflow: hidden;
+ }
+
+ .knowledge__container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1em;
+    align-items: center;
+ }
+
+ .knowledge__picture {
+    max-width: 500px;
+ }
+
+ .knowledge__paragraph {
+    line-height: 1.7;
+    margin-bottom: 15px;
+ }
+
+ .knowledge__img {
+    width: 100%;
+    display: block;
+ }
+
+ /*Price*/
+
+ .price {
+    text-align: center;
+ }
+
+ .price__table {
+    padding-top: 60px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2.5em;
+    justify-content: space-evenly;
+    align-items: center;
+ }
+
+ .price__element {
+    background-color: #e5e5f7;
+    text-align: center;
+    border-radius: 10px;
+    width: 330px;
+    padding: 40px;
+    --color-plan: #696871;
+    --color-price: #1D293F;
+    --bg-cta: #fff;
+    --color-cta: #5454D4;
+    --color-items: #696871;
+ }
+
+ .price__element--best {
+    width: 370px;
+    padding: 60px 40px;
+    background-color: rgb(244, 153, 7);
+    --color-plan: rgb(255 255 255 / 75%);
+    --color-price: #fff;
+    --bg-cta: #9F3919;
+    --color-cta: #FFF;
+    --color-items: #fff;
+ }
+
+ .price__name {
+    color: var(--color-plan);
+    margin-bottom: 15px;
+    font-weight: 300;
+
+ }
+
+ .price__price {
+    font-size: 2.5rem;
+    color: var(--color-price);
+ }
+
+ .price__items {
+    margin-top: 35px;
+    display: grid;
+    gap: 1em;
+    font-weight: 300;
+    font-size: 1.2rem;
+    margin-bottom: 50px;
+    color: var(--color-items);
+ }
+
+ .price__cta {
+    display: block;
+    padding: 20px 0;
+    border-radius: 10px;
+    text-decoration: none;
+    background-color: var(--bg-cta);
+    font-weight: 600;
+    color: var(--color-cta);
+    box-shadow: 0 0 1px rgba(0, 0, 0, .5);
+ }
+
+ /*Testimony*/
+
+ .testimony {
+    background-color: #e5e5f7;
+ }
+
+ .testimony__container {
+    display: grid;
+    grid-template-columns: 50px 1fr 50px;
+    gap: 1em;
+    align-items: center;
+
+ }
+
+ .testimony__body {
+    display: grid;
+    grid-template-columns: 1fr max-content;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2em;
+    grid-column:2/3 ;
+    grid-row: 1/2;
+    opacity: 0;
+    pointer-events: none;
+ }
+  
+.testimony__body--show{
+   pointer-events: unset;
+opacity: 1;
+transition: opacity 1.5 ease-in-out;
+
 }
 
 
-.nav__title {/* Estilos para el título de la barra de navegación */
-   font-weight: 300;/* Establece el grosor de la fuente del título */
+ .testimony__img{
+   width: 250px;
+   height: 250px;
+border-radius: 50%;
+object-fit: cover;
+object-position: 50% 30%;
+}
+
+.testimony__texts{
+max-width: 700px;
+
 }
 
 
-.nav__link {/* Estilos para los enlaces de la barra de navegación */
-   margin-left: auto;/* Establece un margen a la izquierda de los enlaces */
-   padding: 0;/* Establece el relleno de los enlaces a 0 */
-   display: grid;/* Establece la presentación de los enlaces como una cuadrícula */
-   grid-auto-flow: column;/* Establece el flujo automático de la cuadrícula en columnas */
-   grid-auto-columns: max-content;/* Establece el ancho de columna automático según el contenido máximo */
-   gap: 2em;/* Establece el espacio entre las columnas */
+.testimony__course{
+   background-color: royalblue;
+color: #fff;
+display: inline-block;
+padding: 5px;
 }
 
-.nav__items {/* Estilos para los elementos de la barra de navegación */
-   list-style: none;/* Elimina los marcadores de lista de los elementos */
-}
-
-
-.nav__links {/* Estilos para los enlaces de la barra de navegación */
-   color: #fff;/* Establece el color del texto de los enlaces como blanco */
-   text-decoration: none;/* Elimina la decoración de texto de los enlaces */
-}
-
-.nav__menu {/* Estilos para el menú de navegación */
-   margin-left: auto;/* Establece un margen a la izquierda del menú */
-   cursor: pointer;/* Cambia el cursor a un puntero cuando pasa sobre el menú */
-   display: none;/* Oculta el menú de navegación */
-}
-
-
-.nav__img {/* Estilos para la imagen de la barra de navegación */
-   display: block; /* Establece la presentación de la imagen como bloque */
-   width: 30px;/* Establece el ancho de la imagen en 30px */
-}
-
-
-.nav__close {/* Estilos para el cierre de la barra de navegación */
-   display: var(--show, none);/* Establece el valor de visualización según la variable --show */
-}
-
-/* hero container*/
-
-.hero__container {
-   max-width: 800px;
-   --padding-container: 0;
-   display: grid;
-   grid-auto-rows: max-content;
-   align-content: center;
-   gap: 1em;
-   padding-bottom: 100px;
-   text-align: center;
-}
-
-.hero__title{
-   font-size: 3rem;
-}
-
-.hero__paragraph{
-   margin-bottom: 20px;
-}
-
-
-.cta{
-   display: inline-block;
-   background-color: #2091f9;
-   justify-self: center;
-   color: #fff;
-   text-decoration: none;
-   padding:13px 30px;
-   border-radius: 32px;
-
-}
-
-/*about */ 
-
-.about{
-text-align: center;
-}
-
-.subtitle{
-   color: var(--color-title);
-   font-size: 2rem;
-   margin-bottom: 25px;
-}
-
-.about__paragraph{
-   line-height: 1.7;
-}
-
-.about__main {
-   padding-top:80px;
-   display: grid;
+.testimony__arrow{
    width: 90%;
-   margin: 0 auto;
-   gap: 1em;
-   overflow: hidden;
-   grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+   cursor: pointer;
 }
 
-
-.about__icons {
-display: grid;
-gap: 1em;
-justify-items: center;
-width: 260px;
-overflow: hidden;
-margin: 0 auto;
-}
-
-.about__icon{
-   width: 40px;
-}
-
-/*kwonledge*/
-
-.knowledge{
-   background-color: #e5e5f7;
-   
-   background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, rgb(244, 153, 7) 10px ), repeating-linear-gradient( #fabe75e8, #eadfce );
-overflow: hidden;
-}
-
-.knowledge__container{
-   display: grid;
-   grid-template-columns: 1fr 1fr;
-   gap: 1em;
-   align-items: center;
-}
-
-.knowledge__picture{
-   max-width: 500px;
-}
-
-.knowledge__paragraph{
-   line-height: 1.7;
-   margin-bottom: 15px;
-}
-
-.knowledge__img{
-   width: 100%;
-   display: block;
-}
-
-/*Price*/
-
-.price{
-   text-align: center;
-}
-
-.price__table{
-   padding-top: 60px;
-   display: flex;
-   flex-wrap: wrap;
-   gap: 2.5em;
-   justify-content: space-evenly;
-   align-items: center;
-}
-
-.price__element{
-   background-color: #e5e5f7;
-   text-align: center;
-   border-radius: 10px;
-   width: 330px;
-   padding: 40px;
-   --color-plan: #696871;
-   --color-price: #1D293F;
-   --bg-cta: #fff;
-   --color-cta: #5454D4;
-   --color-items: #696871;
-}
-
-.price__element--best{
-   width: 370px;
-   padding: 60px 40px;
-   background-color: rgb(244, 153, 7);
-   --color-plan: rgb(255 255 255 / 75%);
-   --color-price: #fff;
-   --bg-cta: #9F3919;
-   --color-cta: #FFF;
-   --color-items: #fff;
-}
-
-   .price__name{
-      color: var(--color-plan);
-      margin-bottom: 15px;
-      font-weight: 300;
-
-   }
-
-   .price__price{
-      font-size: 2.5rem;
-      color: var(--color-price);
-   }
-
-   .price__items{
-      margin-top: 35px;
-      display: grid;
-      gap: 1em;
-      font-weight: 300;
-      font-size: 1.2rem;
-      margin-bottom: 50px;
-      color: var(--color-items);
-   }
-
-   .price__cta{
-      display: block;
-      padding: 20px  0;
-      border-radius: 10px;
-      text-decoration: none;
-      background-color: var(--bg-cta);
-      font-weight: 600;
-      color: var(--color-cta);
-      box-shadow: 0 0 1px rgba(0,0,0, .5);
-   }
