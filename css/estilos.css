@@ -351,10 +351,24 @@
  /*Testimony*/
 
  /* Establece el fondo del contenedor de testimonios */
-.testimony {
+/*.testimony {
    background-image: radial-gradient(circle at center center, #fabe75e8, rgb(244, 153, 7)), repeating-radial-gradient(circle at center center, #fabe75e8, #eadfce, 10px, transparent 20px, transparent 10px);
    background-blend-mode: multiply;
-}
+}*/
+
+.testimony {
+   position: relative;
+ }
+ 
+ #video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%; /* Ajusta el ancho según tu preferencia */
+   height: 400px; /* Ajusta la altura según tu preferencia */
+   object-fit: cover; /* Ajusta el tamaño del video para cubrir el contenedor */
+   z-index: -1;
+ }
 
 /* Establece la rejilla para el contenedor de testimonios */
 .testimony__container {
@@ -366,6 +380,7 @@
 
 /* Estiliza el cuerpo de cada testimonio */
 .testimony__body {
+   color: #fff;
    display: grid; /* Establece el cuerpo del testimonio como una rejilla */
    grid-template-columns: 1fr max-content; /* Establece las columnas de la rejilla para el cuerpo del testimonio */
    justify-content: space-between; /* Justifica los elementos del cuerpo del testimonio */
@@ -478,6 +493,7 @@
 
 /* Estiliza el texto mostrado para las preguntas */
 .questions__show{
+
    text-align: left; /* Establece el texto alineado a la izquierda para el texto mostrado de las preguntas */
    height: 0; /* Establece la altura inicial del texto mostrado de las preguntas en 0 */
    transition: height .3s; /* Establece una transición suave para la altura del texto mostrado de las preguntas */
@@ -493,4 +509,99 @@
    width: 60%; /* Establece el ancho para la copia de las preguntas */
    margin: 0 auto; /* Establece un margen automático para la copia de las preguntas */
    margin-bottom: 30px; /* Establece un margen inferior*/  
+}
+
+/*footer*/
+ 
+.footer {
+   position: relative;
+ }
+ 
+ #video {
+   position: absolute;
+   top: 0;
+   left: 0;
+   width: 100%; /* Ajusta el ancho según tu preferencia */
+   height: 400px; /* Ajusta la altura según tu preferencia */
+   object-fit: cover; /* Ajusta el tamaño del video para cubrir el contenedor */
+   z-index: -1;
+ }
+ 
+.footer__title{
+   font-weight: 300;
+   font-size: 2rem;
+   margin-bottom: 30px;
+}
+
+.footer__title, .footer__newsletter{
+   color: #FFF;
+    
+}
+
+.footer__container{
+   display: flex;
+   justify-content: space-between;
+align-items: center;
+border-bottom: 1px solid #fff;
+padding-bottom: 60px;
+
+}
+
+.nav--footer{
+   padding-bottom: 20px;
+   display: grid;
+   gap: 1em;
+   grid-auto-flow: row;
+   height: 100%;
+
+}
+
+.nav__link--footer{
+   display: flex;
+margin: 0;
+margin-right: 20px;
+flex-wrap: wrap;
+}
+
+.footer__inputs{
+   margin-top: 10px;
+   display: flex;
+   overflow: hidden;
+
+}
+
+.footer__input{
+   background-color: #FFF;
+   height: 50px;
+   display: block;
+   padding-left: 10px;
+   border-radius: 6px;
+   font-size: 1rem;
+   outline: none;
+   border: none;
+   margin-right: 16px;
+}
+
+.footer__submit{
+   margin-left: auto;
+   display: inline-block;
+   height: 50px;
+   padding: 0 20px;
+   background-color: #2091f9;
+   border: none;
+   font-size: 1rem;
+   color: #fff;
+   border-radius: 6px;
+
+}
+
+.footer__copy{
+   --padding-container: 30px;
+   text-align: center;
+   color: #fff;
+
+}
+
+.footer__copyright{
+   font-weight: 300;
 }
