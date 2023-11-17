@@ -9,11 +9,32 @@
     <!-- especifica el conjunto de caracteres utilizado, que en este caso es UTF-8, que incluye la mayoría de los caracteres comunes. -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Define cómo el contenido se ajusta al ancho de la pantalla y el nivel de zoom inicial.  -->
-    <title>I'M RDS DevPro</title> <!-- Define el título de la página que se mostrará en la pestaña del navegador. -->
-    <link rel="shortcut icon" href="./images/Website Logo.png" type="images/x-icon">
+     <!-- Define el título de la página que se mostrará en la pestaña del navegador. -->
+    <link rel="shortcut icon" href="./images/Simple Logo and Favicon (Community).png" type="images/x-icon">
     <!-- Especifica el icono que se mostrará en la pestaña del navegador.  -->
     <link rel="stylesheet" href="./css/normalize.css"> <!--  Vinculan las hojas de estilo externas al documento. -->
     <link rel="stylesheet" href="./css/estilos.css"> <!-- Vinculan las hojas de estilo externas al documento. -->
+
+    <!-- Primary Meta Tags -->
+<title>Prototipo Marketing</title>
+<meta name="title" content="Prototipo de página web de marketing" />
+<meta name="description" content="Este es un proyecto que hice para probar mis habilidades en HTML, CSS y JS." />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://ronalRD19.github.io" />
+<meta property="og:title" content="Prototipo de página web de marketing" />
+<meta property="og:description" content="Este es un proyecto que hice para probar mis habilidades en HTML, CSS y JS." />
+<meta property="og:image" content="https:/ronalRD19.github.io/images/web.jpg" />
+
+<!-- Twitter -->
+<meta property="twitter:card" content="summary_large_image" />
+<meta property="twitter:url" content="https://ronalRD19.github.io" />
+<meta property="twitter:title" content="Prototipo de página web de marketing" />
+<meta property="twitter:description" content="Este es un proyecto que hice para probar mis habilidades en HTML, CSS y JS." />
+<meta property="twitter:image" content="https:/ronalRD19.github.io/images/web.jpg" />
+
+<!-- Meta Tags Generated with https://metatags.io -->
 </head>
 
 <body>
@@ -34,17 +55,17 @@
                 <!-- ul  Define una lista desordenada, que es una lista de elementos no ordenados. -->
                 <li class="nav__items">
                     <!-- li Representa un elemento de una lista, ya sea ordenada o desordenada -->
-                    <a href="#" class="nav__links">lorem</a>
+                    <a href="#" class="nav__links">Inicio</a>
                     <!--a Define un hipervínculo. El atributo href especifica la URL a la que enlaza el enlace -->
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">lorem</a>
+                    <a href="#" class="nav__links">Acerca de</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">lorem</a>
+                    <a href="#" class="nav__links">Contacto</a>
                 </li>
                 <li class="nav__items">
-                    <a href="#" class="nav__links">lorem</a>
+                    <a href="#" class="nav__links">Blog</a>
                 </li>
                 <img src="./images/close.svg" alt="fondo" class="nav__close">
                 <!-- Define una imagen. El atributo src especifica la URL de la imagen y el atributo alt proporciona un texto alternativo para la imagen.  -->
@@ -60,7 +81,7 @@
             <p class="hero__paragraph">20-Comenzaremos a darle forma al sitio web, comenzamos con la estuctura para ello
                 iniciamos con la etiqueta de header con la clase hero ya que sera la seccion hero de la pagina. Dentro
                 de la etiqueta header creamos la etiqueta nav.</p> <!-- <p>: Define un párrafo de texto.  -->
-            <a href="#" class="cta">ipsum.</a>
+            <a href="#" class="cta">Comienza ahora</a>
         </section>
 
 
@@ -189,7 +210,7 @@
 
         <section class="testimony">
             <!--  <section class="testimony">: Esta etiqueta define una sección que contiene testimonios de diferentes usuarios o clientes. Se utiliza para agrupar y organizar testimonios en una página web. -->
-                <video autoplay muted loop id="video">
+                <video autoplay muted loop id="video1">
                     <source src="./videos/sliders2.mp4" type="video/mp4">
                   </video>
             <div class="testimony__container container">
@@ -331,7 +352,7 @@
     </main>
 
     <footer class="footer">
-        <video autoplay muted loop id="video">
+        <video autoplay muted loop id="video2">
             <source src="./videos/footer.mp4" type="video/mp4">
           </video>
         
@@ -339,29 +360,30 @@
 <section class="footer__container container">
     
 <nav class="nav nav--footer">
-    <h2 class="footer__title">Curso CSS</h2>
+    <h2 class="footer__title">Marketing</h2>
     <ul class="nav__link nav__link--footer">
         <li class="nav__items">
             <!-- li Representa un elemento de una lista, ya sea ordenada o desordenada -->
-            <a href="#" class="nav__links">lorem</a>
+            <a href="#" class="nav__links">Inicio</a>
             <!--a Define un hipervínculo. El atributo href especifica la URL a la que enlaza el enlace -->
         </li>
         <li class="nav__items">
-            <a href="#" class="nav__links">lorem</a>
+            <a href="#" class="nav__links">Acerca de</a>
         </li>
         <li class="nav__items">
-            <a href="#" class="nav__links">lorem</a>
+            <a href="#" class="nav__links">Contacto</a>
         </li>
         <li class="nav__items">
-            <a href="#" class="nav__links">lorem</a>
+            <a href="#" class="nav__links">Blog</a>
         </li>
 
     </ul>
 </nav>
-<form class="footer__form">
-    <h2 class="footer__newsletter">Suscribite a la newsletter</h2>
+<form class="footer__form" action="https://formspree.io/f/mwkdjqdv"
+method="POST">
+    <h2 class="footer__newsletter">Suscribete</h2>
     <div class="footer__inputs">
-        <input type="email" placeholder="Email" class="footer__input">
+        <input type="email" placeholder="Email" class="footer__input" name="email">
         <input type="submit" value="Registrate" class="footer__submit">
 </div>
 </form>
@@ -373,7 +395,7 @@
         <a href="#" class="footer__icons"> <img src="./images/twitter.svg" alt="Facebook" class="footer__img"></a>
         <a href="#" class="footer__icons"> <img src="./images/youtube.svg" alt="Facebook" class="footer__img"></a>
     </div>
-    <h3 class="footer__copyright"> Derechos reservados &copy; Ronald David Zambrano Salas </h3>
+    <h3 class="footer__copyright"> Derechos reservados &copy; Ronald  Zambrano  </h3>
 </section>
 
     </footer>
