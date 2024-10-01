@@ -1,4 +1,4 @@
-# PaginaWeb Marketing https://ronalrd19.github.io/
+# PaginaWeb Marketing 
 
 ## Descripción
 
